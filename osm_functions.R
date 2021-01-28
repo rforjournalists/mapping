@@ -64,7 +64,7 @@ ggplot() +
   geom_sf(data = water$osm_multipolygons, fill = '#c6e1e3') +
   geom_sf(data = rail$osm_lines, color = '#596060', size = 1) +
   geom_sf(data = parks$osm_polygons, fill = '#94ba8e') +
-  geom_sf(data = buildings$osm_points, color = '#40493f', fill = '#40493f', size = 2) +
+  geom_sf(data = buildings$osm_polygons, color = '#40493f', fill = '#40493f', size = 1) +
   coord_sf(xlim = c(coords[1], coords[1,2]), 
-                                            ylim = c(coords[2], coords[2,2]),
-                                            expand = FALSE) + theme_minimal()
+           ylim = c(coords[2], coords[2,2]),
+           expand = FALSE) + theme_minimal()
