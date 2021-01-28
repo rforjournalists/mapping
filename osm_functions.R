@@ -1,4 +1,6 @@
 library(osmdata)
+library(tidyverse)
+library(sf)
 
 #choose location to plot
 #option 1 is not recommended in this instance
